@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;600;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+main {
+  display: flex;
+  height: 876px;
+}
+
+/* Left container */
+
+.container-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.twitter-texture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.white-logo {
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Right containter */
+
+.container-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  line-height: 6rem;
+  margin-top: 50px;
+}
+
+.blue-logo {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+}
+
+/* Footer Navigation */
+
+.footer-nav {
+  padding: 2px 40px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 6px 6px 6px;
+  font-size: 15px;
+  color: black;
+}
+
+/* Buttons */
+
+.google-logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.sign-up-google {
+  width: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.sign-up-google:hover {
+  background-color: rgba(217, 234, 250, 0.2);
+  border-color: #c5e1fb;
+}
+
+.apple-logo {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.sign-up-apple {
+  width: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+.sign-up-apple:hover {
+  background-color: rgba(197, 197, 197, 0.2);
+}
+
+.sign-up-email {
+  width: 300px;
+  background-color: #1d9bf0;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+.sign-up-email:hover {
+  background-color: #288dd1;
+}
+
+.sign-in {
+  width: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: #1d9bf0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+.sign-in:hover {
+  background-color: rgba(211, 241, 255, 0.5);
+}
+
+.or-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-and-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 40px;
+}
+
+.terms {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 300;
+}
+
+.already-account {
+  font-size: 1.2rem;
+  padding-top: 0.1rem;
+  line-height: 4rem;
+  margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-left {
+    width: 100%;
+  }
+  .container-right {
+    width: 100%;
+  }
+}
