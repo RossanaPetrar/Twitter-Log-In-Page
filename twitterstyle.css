@@ -9,7 +9,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
-main {
+.container-main {
   display: flex;
   height: 876px;
 }
@@ -20,7 +20,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  flex: 1.5;
 }
 
 .twitter-texture {
@@ -31,8 +31,8 @@ main {
 }
 
 .white-logo {
-  width: 400px;
-  height: 400px;
+  width: 370px;
+  height: 370px;
   z-index: 1;
   position: absolute;
 }
@@ -40,8 +40,8 @@ main {
 /* Right containter */
 
 .container-right {
-  width: 45%;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -71,6 +71,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -78,7 +79,11 @@ li {
   list-style: none;
   padding: 12px 6px 6px 6px;
   font-size: 15px;
+}
+
+.footer-link {
   color: black;
+  text-decoration: none;
 }
 
 /* Buttons */
@@ -197,11 +202,19 @@ li {
   margin-top: 2.5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .container-left {
-    width: 100%;
+@media only screen and (max-width: 990px) {
+  .container-main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
   }
+  .container-left {
+    height: 400px;
+    flex-shrink: 2;
+  }
+
   .container-right {
-    width: 100%;
+    padding-left: 10%;
+    flex-shrink: 2;
   }
 }
